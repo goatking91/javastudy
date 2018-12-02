@@ -1,23 +1,22 @@
-# eomcs-java-project-2.6
+# eomcs-java-project-2.7
 
-다형성과 형변환 응용
+제네릭을 사용하는 방법과 이점
 
-- 데이터 처리 클래스를 일반화하여 재사용성을 높이는 방법
-- 다형적 변수의 활용해야 하는 이유
-- 형변환이 필요한 이유
+- Object 타입의 한계를 극복하는 제네릭 활용법
 
 ## 프로젝트 - 수업관리 시스템  
 
-### 과제 1: Lesson, Member, Board를 모두 처리할 수 있는 List 클래스를 만들라.
+### 과제 1: ArrayList 클래스에 제네릭을 적용하라.
 
 - ArrayList.java
-    - LessonList, MemberList, BoardList 클래스를 합쳐 한 클래스로 만든다.
+    - 다양한 객체에 대해 목록을 다룰 수 있도록 제네릭 문법을 적용한다.
+    - 목록을 처리를 필요로 하는 여러 프로젝트에서 두루 사용할 수 있도록 util 패키지를 만들어 이동시킨다.
 - LessonHandler.java
-    - `ArrayList` 클래스를 사용하여 데이터를 처리한다.
+    - 제네릭을 적용한 `ArrayList` 클래스를 사용하여 데이터를 처리한다.
 - MemberHandler.java
-    - `ArrayList` 클래스를 사용하여 데이터를 처리한다.
+    - 제네릭을 적용한 `ArrayList` 클래스를 사용하여 데이터를 처리한다.
 - BoardHandler.java
-    - `ArrayList` 클래스를 사용하여 데이터를 처리한다.
+    - 제네릭을 적용한 `ArrayList` 클래스를 사용하여 데이터를 처리한다.
 
 #### 실행 결과
 
@@ -25,10 +24,7 @@
 
 ## 실습 소스
 
-- src/main/java/com/eomcs/lms/handler/ArrayList.java 추가
-- src/main/java/com/eomcs/lms/handler/LessonList.java 삭제
-- src/main/java/com/eomcs/lms/handler/MemberList.java 삭제
-- src/main/java/com/eomcs/lms/handler/BoardList.java 삭제
+- src/main/java/com/eomcs/util/ArrayList.java 이동,변경
 - src/main/java/com/eomcs/lms/handler/LessonHandler.java 변경
 - src/main/java/com/eomcs/lms/handler/MemberHandler.java 변경
 - src/main/java/com/eomcs/lms/handler/BoardHandler.java 변경
